@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/id1"
+        android:icon="@drawable/news_icon_1"
+        android:title="News"
+        android:color="@color/white" />
+        />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:color="@color/white"
+        android:icon="@drawable/hot_l"
+        android:title="Hot Event" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home2"
+        android:title="@string/title_home"
+        />
+
+
+    <item
+        android:id="@+id/id2"
+        android:icon="@drawable/star_l"
+        android:title="@string/Favorite"
+
+        />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/pro"
+        android:title="Product" />
+
+
+
+</menu>
+
+

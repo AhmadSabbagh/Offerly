@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    tools:context="com.example.ahmad.hakimi.improve_program">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="0" />
+
+    <EditText
+        android:id="@+id/improveTextID"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Give us an Advice"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:background="@drawable/home_bu_sign"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="suggBu"
+        android:text="Send" />
+</LinearLayout>

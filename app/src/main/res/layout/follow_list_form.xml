@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">>
+
+
+    <Button
+        android:id="@+id/list_item_string"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="120dp"
+
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="119dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/folowBu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/offerBu"
+        android:layout_toEndOf="@+id/offerBu"
+        android:background="@drawable/home_bu_agent"
+        android:text="Loading..."
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/offerBu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/productimgID"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/home_bu_agent"
+        android:text="Offer"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/LocationID"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/folowBu"
+        android:layout_toEndOf="@+id/branchesID2"
+        android:background="@drawable/home_bu_agent"
+        android:text="Location"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/branchesID2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/folowBu"
+        android:layout_toEndOf="@+id/folowBu"
+        android:background="@drawable/home_bu_agent"
+        android:text="Brunches"
+        android:textColor="@color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/productimgID"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
+
+
+</RelativeLayout>

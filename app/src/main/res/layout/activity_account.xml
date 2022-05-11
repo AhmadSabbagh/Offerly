@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/backgroung"
+    tools:context="com.example.ahmad.hakimi.Account">
+
+    <Button
+        android:id="@+id/changepassID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:onClick="forgetPass"
+        android:text="Change Password" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/EditResourcesID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_column="1"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:onClick="editResourc"
+        android:text="EditResources" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/InformationID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_column="1"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:onClick="getmyinfo"
+        android:text="Information" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/NotificationID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+
+        android:onClick="edtNoti"
+        android:text="Looding.." />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/ShareID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+
+        android:onClick="share"
+        android:text="Share" />
+
+
+
+</LinearLayout>

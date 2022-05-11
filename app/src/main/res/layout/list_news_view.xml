@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+
+    android:foregroundGravity="center_horizontal|center"
+    android:gravity="center_horizontal|center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/newsImg"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/Agent_nameId"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/newsImg"
+        android:layout_marginStart="12dp"
+        android:paddingLeft="8dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/News_nameID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ReadMoreID"
+        android:layout_below="@+id/addfavID"
+        android:layout_marginEnd="-24dp"
+        android:maxLength="50"
+        android:text="new  branch for macdonalds"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/News_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ReadMoreID"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/ReadMoreID"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Agent_nameId"
+        android:layout_marginEnd="24dp"
+        android:text="Read Full Artical"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+    <ImageButton
+        android:id="@+id/addfavID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/newsImg"
+        android:layout_marginEnd="42dp"
+        android:background="@null"
+        android:src="@android:drawable/btn_star" />
+
+    <Button
+        android:id="@+id/removeID"
+        android:layout_width="61dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/home_bu_agent"
+        android:text="Remove"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    tools:context="com.example.ahmad.hakimi.Suggestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bnve"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/AgentNameId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/home_bu"
+            android:ems="10"
+            android:hint="Agent Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/AgentPhoneId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/home_bu"
+            android:ems="10"
+            android:hint="Agent Phone"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/AgentEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/home_bu"
+            android:ems="10"
+            android:hint="Agent Email"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/YourEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/home_bu"
+            android:ems="10"
+            android:hint="Your Email"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/YourPhoneId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/home_bu"
+            android:ems="10"
+            android:hint="Your Phone"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:background="@drawable/home_bu_sign"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="SendSugg"
+            android:text="Send Suggestion" />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|start"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    tools:context="com.example.ahmad.hakimi.SignUp">
+
+    <EditText
+        android:id="@+id/rmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="387dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_above="@+id/rpass"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/rpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:layout_marginBottom="57dp"
+        android:layout_alignBottom="@+id/rgender"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/rphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:layout_below="@+id/rbirth"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+
+    <EditText
+        android:id="@+id/raddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="243dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/rbirth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Birth Date"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="106dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/raddress"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/rgender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="@drawable/home_bu"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/registerBu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="1"
+        android:background="@drawable/home_bu_sign"
+        android:onClick="sign_UP"
+        android:text="Sign Up"
+        tools:layout_editor_absoluteY="325dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/emailicon"
+        android:layout_above="@+id/rpass"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/rpass"
+        android:layout_alignStart="@+id/imageView3"
+        app:srcCompat="@drawable/lockicon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/adressicon"
+        android:layout_above="@+id/rbirth"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/birthicon"
+        android:layout_above="@+id/rphone"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/phoneicon"
+        android:layout_alignTop="@+id/rphone"
+        android:layout_alignStart="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/gendericon"
+        android:layout_above="@+id/raddress"
+        android:layout_alignStart="@+id/imageView5" />
+
+</RelativeLayout>

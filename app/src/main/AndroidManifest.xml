@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ahmad.hakimi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconnewone"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            tools:replace="android:theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".HomePage" />
+        <activity
+            android:name=".ActiveEmail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUp2"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgetPass"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ListViewActivity"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Maps"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Account"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".First_Page"
+            android:theme="@style/AppTheme.TransNav.NoActionBar" />
+        <activity
+            android:name=".hot_event_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgetPasswordPage"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ComplaintActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Suggestion"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".information" />
+        <activity android:name=".SuggestionFirstPage" />
+        <activity android:name=".facebook_google_sign_up" />
+        <activity android:name=".fullnewsactivity" />
+        <activity android:name=".improve_program" />
+        <activity android:name=".Agent_profile" />
+        <activity android:name=".nearby" />
+        <activity android:name=".resources" />
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".NewFavoriteAvtivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".hot_event_activity" />
+        <activity android:name=".pic_show" />
+
+        <service android:name=".basicClass.FcmMessage">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".agent_list" />
+        <activity android:name=".product" />
+        <activity android:name=".OrderActivity"></activity>
+    </application>
+
+</manifest>
